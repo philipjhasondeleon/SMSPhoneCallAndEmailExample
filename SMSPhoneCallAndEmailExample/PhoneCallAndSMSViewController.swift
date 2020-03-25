@@ -27,7 +27,7 @@ class PhoneCallAndSMSViewController: UIViewController, MFMessageComposeViewContr
             let messageVC = MFMessageComposeViewController()
         
         messageVC.body = NSLocalizedString("STR_SUBJECT", comment: "")
-        messageVC.recipients = ["+11234567890"]
+        messageVC.recipients = ["+6478700302"]
         messageVC.messageComposeDelegate = self
         
         self.present(messageVC, animated: false, completion: nil)
@@ -58,7 +58,7 @@ class PhoneCallAndSMSViewController: UIViewController, MFMessageComposeViewContr
     ///Make Phone Call - No delegates are used
     @IBAction func makePhoneCall(sender: UIButton)
     {
-        if let url = URL(string: "tel://+1123777777)"), UIApplication.shared.canOpenURL(url)
+        if let url = URL(string: "tel://+6478700302)"), UIApplication.shared.canOpenURL(url)
         {
             if #available(iOS 10, *)
             {
